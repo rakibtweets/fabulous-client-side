@@ -1,0 +1,26 @@
+.title-box-2 {
+    margin-bottom: 3rem;
+  }
+  
+  .title-left {
+    font-size: 2rem;
+    position: relative;
+  }
+  .title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #f05108;
+    width: 100px;
+    bottom: -12px;
+  }
+  .title{
+      text-align: center;
+  }
+  .btn{
+      /* text-align: center; */
+      justify-content: center;
+      align-items: center;
+      background-color: darksalmon;
+      border-radius: 10px;
+  }
