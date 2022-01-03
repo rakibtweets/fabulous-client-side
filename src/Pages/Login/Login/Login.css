@@ -1,0 +1,9 @@
+.login__btn {
+  background: rgb(227, 142, 165);
+  color: white;
+  transition: 0.3s;
+}
+.login__btn:hover {
+  background: rgb(77, 74, 74);
+  color: white;
+}
