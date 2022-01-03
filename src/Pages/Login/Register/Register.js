@@ -1,10 +1,9 @@
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import './Login.css';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Register = () => {
   const {
     register,
     handleSubmit,
@@ -15,8 +14,15 @@ const Login = () => {
     <>
       <Container>
         <Card className="p-5 w-50 mx-auto">
-          <h3 className="fw-bold mb-3">Login</h3>
+          <h3 className="fw-bold mb-3">Create Account</h3>
           <form onSubmit={handleSubmit(onSubmit)}>
+            <input
+              className="form-control rounded-pill"
+              placeholder="Name"
+              type="name"
+              {...register('name', { required: true })}
+            />
+            <br />
             <input
               className="form-control rounded-pill"
               placeholder="Email"
@@ -32,7 +38,14 @@ const Login = () => {
               {...register('password', { required: true })}
             />
             {/* errors will return when field validation fails  */}
-            {errors.exampleRequired && <span>This field is required</span>}
+            {errors.password && <span>This field is required</span>}
+            <br />
+            <input
+              className="form-control rounded-pill"
+              placeholder="Confirm Password"
+              type="password"
+              {...register('confirmPassword', { required: true })}
+            />
             <br />
 
             <button
@@ -44,11 +57,8 @@ const Login = () => {
             <br />
             <br />
 
-            <Link
-              className="text-decoration-none text-secondary"
-              to="/register"
-            >
-              Create Account
+            <Link className="text-decoration-none text-secondary" to="/login">
+              All ready have account ?
             </Link>
           </form>
         </Card>
@@ -57,4 +67,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
