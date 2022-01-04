@@ -4,15 +4,15 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const AwesomeFeatures = () => {
   return (
-    <Container>
+    <Container className='mt-5'>
       <div className="text-center m-5">
-        <p className="trend">THE Products</p>
+        <p className="trend">THE PRODUCTS</p>
         <h2 className="title-left">Awesome Features</h2>
       </div>
       <Row xs={1} lg={2} className="g-2">
         <Col md={6} xs={12}>
           <img
-            style={{ width: '100%' }}
+            style={{ width: '100%', marginTop: "50px" }}
             src="https://cdn.shopify.com/s/files/1/0301/7274/1770/files/featuresbannerimage.png?v=1610091508"
             alt=""
           />

@@ -7,7 +7,7 @@ const Services = () => {
     <Container>
       <div className="container text-center m-5">
         <div>
-          <h5 style={{ color: '#E38EA5' }}>THE PRODUCTS</h5>
+          <h5 style={{ color: '#E38EA5', marginTop: "50px" }}>THE PRODUCTS</h5>
           <h2 className="title-left">Our Services</h2>
         </div>
       </div>

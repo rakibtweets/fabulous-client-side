@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const ContactForm = () => {
   return (
     <div className="form">
-      <Container className="p-3 mt-5 form">
+      <Container className="p-5 mt-5 form">
         <Row xs={1} lg={2} className="g-3">
           <Col md={6} sm={12}>
             <p className="slider-left">THE PRODUCTS</p>

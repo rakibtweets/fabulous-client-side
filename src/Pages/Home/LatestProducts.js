@@ -4,17 +4,17 @@ import './LatestProducts.css';
 
 const LatestProducts = () => {
   return (
-    <Container className="mt-5 mb-5 ">
+    <Container className=" mb-5">
       <div className="banner mt-5px">
-        <div className="container text-center m-5">
-          <div>
+        <div className="container text-center m-3">
+          <div className='mt-3'>
             <h2
               style={{ color: '#E38EA5' }}
-              className="trend text-center fw-bold "
+              className="mt-5 text-center  "
             >
-              The Latest
+              THE LATEST
             </h2>
-            <h2 className="title-left fw-bold">Fabolous Products</h2>
+            <h2 className="title-left fw-bold mb-5">Fabolous Products</h2>
           </div>
         </div>
         <Row xs={1} md={3} className="g-4">
@@ -61,14 +61,14 @@ const LatestProducts = () => {
                 <Card.Text>
                   DHC's Super Collagen Mist is a collagen infused mist to
                   hydrate after cleansing, set your makeup, or refresh hydration
-                  throughout the day. Benefits.Hydrate,
+                  throughout the day. Benefits.Hydrate,Universal
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
         </Row>
 
-        <div className="container text-center m-5">
+        <div className="container text-center m-4">
           <button className="btn text-center">View All</button>
         </div>
       </div>

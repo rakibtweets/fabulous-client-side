@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div>
             <footer >
-                <Container className='footer g-5 my-5px'>
+                <Container className='footer g-5 my-5'>
                     <Row>
                         <Col md={3} sm={6}>
                             <h3>Contact </h3>
