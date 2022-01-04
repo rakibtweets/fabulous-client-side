@@ -41,15 +41,10 @@ const Navigation = () => {
             <Nav.Link as={Link} to="home">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="#home/products">
-              Products
+            <Nav.Link as={Link} to="/collections">
+              Collection
             </Nav.Link>
-            <Nav.Link as={Link} to="about">
-              About
-            </Nav.Link>
-            <Nav.Link as={Link} to="cart">
-              Cart
-            </Nav.Link>
+
             {!user.email && (
               <Nav.Link as={Link} to="/register">
                 Register
