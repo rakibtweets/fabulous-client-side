@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const DashboardSideApp = () => {
   const [open, setOpen] = useState(false);
-  const { user, userLogOut } = useAuth();
+  const { user, admin, userLogOut } = useAuth();
 
   const handleToggle = () => setOpen(!open);
   return (
@@ -28,33 +28,32 @@ const DashboardSideApp = () => {
 
             <Drawer.Nav>
               <Nav className=" user__dashboard d-flex flex-column justify-content-center fw-bold">
-                <Nav.Link as={Link} to={`/myOrders`}>
+                <Nav.Link as={Link} to={`/dashboard/myOrders`}>
                   My Orders
                 </Nav.Link>
-                <Nav.Link as={Link} to={`/review`}>
+                <Nav.Link as={Link} to={`/dashboard/review`}>
                   Review
                 </Nav.Link>
-                <Nav.Link as={Link} to={`/payment`}>
+                <Nav.Link as={Link} to={`/dashboard/payment`}>
                   Payment
                 </Nav.Link>
               </Nav>
 
               <Nav className="admin__dashboard d-flex flex-column justify-content-center fw-bold">
-                <Nav.Link as={Link} to={`/addProducts`}>
+                <Nav.Link as={Link} to={`/dashboard/addProducts`}>
                   Add Products
                 </Nav.Link>
 
                 <Nav.Link as={Link} to={``}>
                   Manage All Orders
                 </Nav.Link>
-                <Nav.Link as={Link} to={`/manageProducts`}>
+                <Nav.Link as={Link} to={`/dashboard/manageProducts`}>
                   Manage Products
                 </Nav.Link>
-
-                <Nav.Link as={Link} to={`/makeAdmin`}>
+                <Nav.Link as={Link} to={`/dashboard/makeAdmin`}>
                   Make Admin
                 </Nav.Link>
-                <Nav.Link as={Link} to={`/payment`}>
+                <Nav.Link as={Link} to={`/dashboard/payment`}>
                   Payment
                 </Nav.Link>
               </Nav>

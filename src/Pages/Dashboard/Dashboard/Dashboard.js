@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
 import DashboardSideApp from '../DashboardSideApp/DashboardSideApp';
 
 const Dashboard = () => {
@@ -11,7 +12,7 @@ const Dashboard = () => {
           <DashboardSideApp />
         </Col>
         <Col sm={12} md={9} lg={9}>
-          <h2>Componets</h2>
+          <Outlet />
         </Col>
       </Row>
     </Container>
