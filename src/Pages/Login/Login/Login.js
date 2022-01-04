@@ -2,15 +2,23 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
 const Login = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { signWithGoogle, loginUser, authError, isLoading } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    const { email, password } = data;
+    loginUser(email, password, location, navigate);
+  };
   return (
     <>
       <Container>
