@@ -60,6 +60,11 @@ const Navigation = () => {
                 {user.displayName}
               </Nav.Link>
             )}
+            {user.email && (
+              <Nav.Link as={Link} to="/dashboard">
+                dashboard
+              </Nav.Link>
+            )}
 
             {user.email && (
               <button
