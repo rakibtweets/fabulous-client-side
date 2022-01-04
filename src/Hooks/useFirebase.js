@@ -23,13 +23,13 @@ const useFirebase = () => {
   const googleProvider = new GoogleAuthProvider();
 
   // signin with Google
-  const signWithGoogle = (location, history) => {
+  const signWithGoogle = (location, navigate) => {
     setIsLoading(true);
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
         const redirectUrl = location?.state?.from || '/home';
-        history.push(redirectUrl);
+        navigate(redirectUrl);
         setUser(user);
         //save to database
         saveUser(user.email, user.displayName, 'PUT');
