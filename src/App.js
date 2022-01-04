@@ -9,6 +9,7 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import AdminRoute from './Pages/Login/AdminRoute/AdminRoute';
+import AddProducts from './Pages/Dashboard/AddProducts/AddProducts';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               }
             >
               <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
+              <Route path="/dashboard/addProducts" element={<AddProducts />} />
             </Route>
           </Routes>
         </Router>
