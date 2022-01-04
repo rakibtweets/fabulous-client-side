@@ -3,9 +3,11 @@ import { Card, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
+import useAuth from '../../../Hooks/useAuth';
 
 const Register = () => {
   const navigate = useNavigate();
+  const { signWithGoogle, registerNewUser, authError, isLoading } = useAuth();
   const {
     register,
     handleSubmit,
@@ -19,7 +21,7 @@ const Register = () => {
       swal('Error!', 'Password does not match', 'warning');
       return;
     }
-    // registerNewUser(name, email, password, navigate);
+    registerNewUser(name, email, password, navigate);
     reset();
   };
   return (
