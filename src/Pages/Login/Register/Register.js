@@ -34,7 +34,7 @@ const Register = () => {
     <>
       <Container>
         <Card className="p-5 w-50 mx-auto mt-5">
-          <h3 className="fw-bold mb-3">Create Account</h3>
+          <h3 className="fw-bold text-center mb-3">Create Account</h3>
 
           {isLoading ? (
             <Spinner
@@ -86,14 +86,19 @@ const Register = () => {
               <br />
               <br />
 
-              <Link className="text-decoration-none text-secondary" to="/login">
+              <Link
+                className="text-decoration-none text-center text-secondary"
+                to="/login"
+              >
                 All ready have account ?
               </Link>
             </form>
           )}
 
           <div>
-            <h3 className="fw-bold text-secondary mx-auto my-3">OR</h3>
+            <h3 className="fw-bold text-center text-secondary mx-auto my-3">
+              OR
+            </h3>
             <button
               onClick={handleGoogleSignIn}
               className="btn google-btn py-2 w-100 rounded-pill"

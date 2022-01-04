@@ -27,7 +27,7 @@ const Login = () => {
     <>
       <Container>
         <Card className="p-5 w-50 mx-auto mt-5">
-          <h3 className="fw-bold mb-3">Login</h3>
+          <h3 className="fw-bold text-center mb-3">Login</h3>
           {isLoading ? (
             <Spinner
               className="container-fluid text-center"
@@ -65,7 +65,7 @@ const Login = () => {
               <br />
 
               <Link
-                className="text-decoration-none text-secondary"
+                className="text-decoration-none text-secondary text-center"
                 to="/register"
               >
                 Create Account
@@ -73,7 +73,9 @@ const Login = () => {
             </form>
           )}
           <div>
-            <h3 className="fw-bold text-secondary mx-auto my-3">OR</h3>
+            <h3 className="fw-bold text-center  text-secondary mx-auto my-3">
+              OR
+            </h3>
             <button
               onClick={handleGoogleSignIn}
               className="btn google-btn py-2 w-100 rounded-pill"
