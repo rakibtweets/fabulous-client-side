@@ -1,11 +1,27 @@
 import React from 'react';
-import AddedService from '../../AddedService/AddedService';
+import Navigation from '../../Shared/Navigation/Navigation';
+import Footer from '../../Shared/Footer';
+import Announcement from '../Announcement';
+import AwesomeFeatures from '../AwesomeFeatures';
+import ContactForm from '../ContactForm';
+import LatestProducts from '../LatestProducts';
+import Products from '../Products';
+import Services from '../Services';
+import Slider from '../Slider/Slider';
 
 const Home = () => {
   return (
     <div>
-      <h2>Home page</h2>
-      <AddedService/>
+      <Announcement />
+      <Navigation />
+      <Slider />
+      <AwesomeFeatures />
+
+      <LatestProducts />
+      <Products />
+      <Services />
+      <ContactForm />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,15 @@
+.image{
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.btn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    text-decoration: none;
+}
+.notfound{
+    margin-left: 100px;
+}
