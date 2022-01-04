@@ -1,19 +1,31 @@
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 
 const Register = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    const { name, email, password, confirmPassword } = data;
+    if (password !== confirmPassword) {
+      swal('Error!', 'Password does not match', 'warning');
+      return;
+    }
+    // registerNewUser(name, email, password, navigate);
+    reset();
+  };
   return (
     <>
       <Container>
-        <Card className="p-5 w-50 mx-auto">
+        <Card className="p-5 w-50 mx-auto mt-5">
           <h3 className="fw-bold mb-3">Create Account</h3>
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
@@ -52,7 +64,7 @@ const Register = () => {
               className="btn login__btn text-uppercase rounded-pill w-100"
               type="submit"
             >
-              Sign In
+              Create Account
             </button>
             <br />
             <br />

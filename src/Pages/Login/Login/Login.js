@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <>
       <Container>
-        <Card className="p-5 w-50 mx-auto">
+        <Card className="p-5 w-50 mx-auto mt-5">
           <h3 className="fw-bold mb-3">Login</h3>
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
