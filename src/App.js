@@ -14,6 +14,9 @@ import ProductDetails from './Pages/Collection/Detail/ProductDetails';
 import Navigation from './Pages/Shared/Navigation/Navigation';
 import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
 import Payment from './Pages/Dashboard/Payment/Payment';
+import AdminRoute from './Pages/Login/AdminRoute/AdminRoute';
+import ManageAllOrders from './Pages/Dashboard/ManageAllOrders/ManageAllOrders';
+import Aboutus from './Pages/Aboutus/Aboutus';
 
 function App() {
   return (
@@ -43,6 +46,7 @@ function App() {
             />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/aboutUs" element={<Aboutus />} />
             <Route
               path="/dashboard"
               element={
@@ -51,7 +55,15 @@ function App() {
                 </PrivateRoute>
               }
             >
-              <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
+              <Route path="/dashboard" element={<ManageAllOrders />} />
+              <Route
+                path="/dashboard/makeAdmin"
+                element={
+                  <AdminRoute>
+                    <MakeAdmin />
+                  </AdminRoute>
+                }
+              />
               <Route path="/dashboard/addProducts" element={<AddProducts />} />
               <Route path="/dashboard/myOrders" element={<MyOrders />} />
               <Route path="/dashboard/payment" element={<Payment />} />

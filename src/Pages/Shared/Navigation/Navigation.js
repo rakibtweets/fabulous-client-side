@@ -44,6 +44,9 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/collections">
               Collection
             </Nav.Link>
+            <Nav.Link as={Link} to="/aboutUs">
+              About Us
+            </Nav.Link>
 
             {!user.email && (
               <Nav.Link as={Link} to="/register">

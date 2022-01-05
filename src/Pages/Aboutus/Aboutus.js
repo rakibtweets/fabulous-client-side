@@ -1,12 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
+import Footer from '../Shared/Footer';
+import Navigation from '../Shared/Navigation/Navigation';
 
 const Aboutus = () => {
   return (
     <div>
-      <NavBar />
+      <Navigation />
       <div className="container text-center m-5">
         <h2 className="title-left">About Us</h2>
       </div>
