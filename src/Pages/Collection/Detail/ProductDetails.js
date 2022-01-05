@@ -10,7 +10,6 @@ const ProductDetails = () => {
     fetch(`https://morning-brook-90186.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setProduct(data);
       });
   }, [id]);
