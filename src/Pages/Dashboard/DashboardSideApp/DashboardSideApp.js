@@ -29,7 +29,7 @@ const DashboardSideApp = () => {
             <Drawer.Nav>
               {!admin ? (
                 <Nav className=" user__dashboard d-flex flex-column justify-content-center fw-bold">
-                  <Nav.Link as={Link} to={`/dashboard/myOrders`}>
+                  <Nav.Link as={Link} to={`/dashboard`}>
                     My Orders
                   </Nav.Link>
                   <Nav.Link as={Link} to={`/dashboard/payment`}>
@@ -42,7 +42,7 @@ const DashboardSideApp = () => {
                     Add Products
                   </Nav.Link>
 
-                  <Nav.Link as={Link} to={``}>
+                  <Nav.Link as={Link} to={`/dashboard/ManageAllOrders`}>
                     Manage All Orders
                   </Nav.Link>
                   <Nav.Link as={Link} to={`/dashboard/makeAdmin`}>

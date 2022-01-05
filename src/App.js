@@ -55,7 +55,13 @@ function App() {
                 </PrivateRoute>
               }
             >
-              <Route path="/dashboard" element={<ManageAllOrders />} />
+              <Route
+                path="/dashboard/ManageAllOrders"
+                element={<ManageAllOrders />}
+              />
+
+              <Route path="/dashboard" element={<MyOrders />} />
+
               <Route
                 path="/dashboard/makeAdmin"
                 element={
@@ -65,7 +71,7 @@ function App() {
                 }
               />
               <Route path="/dashboard/addProducts" element={<AddProducts />} />
-              <Route path="/dashboard/myOrders" element={<MyOrders />} />
+
               <Route path="/dashboard/payment" element={<Payment />} />
             </Route>
           </Routes>
