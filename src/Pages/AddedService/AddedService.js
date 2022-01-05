@@ -19,7 +19,7 @@ const AddedService = () => {
         <div className="container mb-5 mt-5 col-lg-6 m-auto col-md-6 col-sm-12 p-2 col-12 ">
            <h2>Submit Products Details</h2> 
            <form className='ms-5' onSubmit={handleSubmit(onSubmit)}>
-                <input className="p-2 mb-2 w-75" {...register('name', { required: true, maxLength: 20 })} placeholder="Product Name" />
+                <input className="p-2 mb-2 w-75" {...register('name', { required: true, maxLength: 25 })} placeholder="Product Name" />
                 <textarea className="p-2 mb-2 w-75" {...register("category")} placeholder="Category" />
                 <textarea className="p-2 mb-2 w-75" {...register("description")} placeholder="Product Details" />
                 <input className="p-2 mb-2 w-75" type="number" {...register("price")} placeholder="Price" />
