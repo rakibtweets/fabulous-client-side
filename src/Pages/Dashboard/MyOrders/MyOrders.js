@@ -8,7 +8,7 @@ const MyOrders = () => {
   const [myOders, setMyOrders] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/myBuyingList/${user?.email}`;
+    const url = `https://morning-brook-90186.herokuapp.com/myBuyingList/${user?.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {

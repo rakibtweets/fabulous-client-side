@@ -7,13 +7,12 @@ const Collection = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    fetch('https://morning-brook-90186.herokuapp.com/products')
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
-        console.log(data);
+        setIsLoading(false);
       });
-    setIsLoading(false);
   }, [isLoading]);
   return (
     <div className="container text-center">

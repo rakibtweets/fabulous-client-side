@@ -118,7 +118,7 @@ const useFirebase = () => {
   // save user information to database
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch('http://localhost:5000/users', {
+    fetch('https://morning-brook-90186.herokuapp.com/users', {
       method: method,
       headers: {
         'content-type': 'application/json',
@@ -130,7 +130,7 @@ const useFirebase = () => {
   // checking admin or not
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user?.email}`)
+    fetch(`https://morning-brook-90186.herokuapp.com/users/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setAdmin(data.admin);
