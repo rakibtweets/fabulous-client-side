@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './LatestProducts.css';
 
 const LatestProducts = () => {
@@ -69,7 +70,11 @@ const LatestProducts = () => {
         </Row>
 
         <div className="container text-center m-5">
-          <button className="btn text-center">View All</button>
+          <Link to="/collections">
+            <button className="btn text-center px-5 rounded-pill">
+              View All
+            </button>
+          </Link>
         </div>
       </div>
     </Container>

@@ -4,14 +4,14 @@ import './Services.css';
 
 const Services = () => {
   return (
-    <Container>
+    <Container className="py-3">
       <div className="container text-center m-5">
         <div>
           <h5 style={{ color: '#E38EA5' }}>THE PRODUCTS</h5>
           <h2 className="title-left">Our Services</h2>
         </div>
       </div>
-      <div className="row">
+      <div className="row py-3">
         <div className="col-md-3">
           <Card style={{ width: '18rem', borderStyle: 'none' }}>
             <Card.Img

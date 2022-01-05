@@ -1,10 +1,11 @@
 import React from 'react';
 import './Products.css';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   return (
-    <Container className="my-20px">
+    <Container className="my-5">
       <Row>
         <Col md={6} sm={12}>
           <img
@@ -40,14 +41,16 @@ const Products = () => {
                 </ul>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-5 mx-3">
-                <button className="btn">View More</button>
-              </div>
-            </div>
           </div>
         </Col>
       </Row>
+      <div className=" d-flex justify-content-center">
+        <div className="">
+          <Link to="/collections">
+            <button className="btn px-5 rounded-pill">View More</button>
+          </Link>
+        </div>
+      </div>
     </Container>
   );
 };
