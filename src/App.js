@@ -12,6 +12,7 @@ import AdminRoute from './Pages/Login/AdminRoute/AdminRoute';
 import AddProducts from './Pages/Dashboard/AddProducts/AddProducts';
 import Collection from './Pages/Collection/Collection/Collection';
 import Detail from './Pages/Collection/Detail/Detail';
+import Navigation from './Pages/Shared/Navigation/Navigation';
 
 function App() {
   return (
@@ -21,8 +22,16 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/collections" element={<Collection/>} />
-            <Route path="/detai/:idNo" element={<Detail/>} />
+            <Route
+              path="/collections"
+              element={
+                <>
+                  <Navigation />
+                  <Collection />
+                </>
+              }
+            />
+            <Route path="/detai/:idNo" element={<Detail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route

@@ -38,7 +38,7 @@ const Navigation = () => {
             </InputGroup>
           </Nav>
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="home">
+            <Nav.Link as={Link} to="/home">
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/collections">
@@ -55,14 +55,15 @@ const Navigation = () => {
                 Login
               </Nav.Link>
             )}
-            {user.email && (
-              <Nav.Link as={Link} to="/login">
-                {user.displayName}
-              </Nav.Link>
-            )}
+
             {user.email && (
               <Nav.Link as={Link} to="/dashboard">
                 dashboard
+              </Nav.Link>
+            )}
+            {user.email && (
+              <Nav.Link as={Link} to="/login">
+                {user.displayName}
               </Nav.Link>
             )}
 
