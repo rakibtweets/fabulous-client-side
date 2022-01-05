@@ -10,6 +10,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import AdminRoute from './Pages/Login/AdminRoute/AdminRoute';
 import AddProducts from './Pages/Dashboard/AddProducts/AddProducts';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/blog" element={<Blogs />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route
