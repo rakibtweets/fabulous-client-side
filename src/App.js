@@ -11,7 +11,7 @@ import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import AdminRoute from './Pages/Login/AdminRoute/AdminRoute';
 import AddProducts from './Pages/Dashboard/AddProducts/AddProducts';
 import Collection from './Pages/Collection/Collection/Collection';
-import Detail from './Pages/Collection/Detail/Detail';
+import ProductDetails from './Pages/Collection/Detail/ProductDetails';
 import Navigation from './Pages/Shared/Navigation/Navigation';
 
 function App() {
@@ -31,7 +31,15 @@ function App() {
                 </>
               }
             />
-            <Route path="/detai/:idNo" element={<Detail />} />
+            <Route
+              path="/productDetails/:id"
+              element={
+                <>
+                  <Navigation />
+                  <ProductDetails />
+                </>
+              }
+            />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route

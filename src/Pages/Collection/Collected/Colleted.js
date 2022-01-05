@@ -8,7 +8,7 @@ const Colleted = ({ product }) => {
       <img className="w-100" src={img} alt="" />
       <h5 className="py-3">{name}</h5>
       <h6 className=" fw-bold"> $ {price}</h6>
-      <Link to={`/detail/${_id}`}>
+      <Link to={`/productDetails/${_id}`}>
         <button className="btn btn-warning mb-2  p-2 px-3">Details</button>
       </Link>
     </div>
