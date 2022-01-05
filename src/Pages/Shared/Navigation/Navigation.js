@@ -15,7 +15,7 @@ const Navigation = () => {
   return (
     <Navbar bg="light" variant="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/home">
           <img
             src="https://cdn.shopify.com/s/files/1/0301/7274/1770/files/Logo_07018bb2-eaf1-4479-a80d-98c3a1c9187b_large.png?v=1610088701"
             alt=""

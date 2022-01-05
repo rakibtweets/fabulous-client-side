@@ -13,6 +13,8 @@ import AddProducts from './Pages/Dashboard/AddProducts/AddProducts';
 import Collection from './Pages/Collection/Collection/Collection';
 import ProductDetails from './Pages/Collection/Detail/ProductDetails';
 import Navigation from './Pages/Shared/Navigation/Navigation';
+import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
+import Payment from './Pages/Dashboard/Payment/Payment';
 
 function App() {
   return (
@@ -52,6 +54,8 @@ function App() {
             >
               <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
               <Route path="/dashboard/addProducts" element={<AddProducts />} />
+              <Route path="/dashboard/myOrders" element={<MyOrders />} />
+              <Route path="/dashboard/payment" element={<Payment />} />
             </Route>
           </Routes>
         </Router>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import useAuth from '../../Hooks/useAuth';
 import { Container, Table } from 'react-bootstrap';
 import swal from 'sweetalert';
+import useAuth from '../../../Hooks/useAuth';
 
 const MyOrders = () => {
   const { user } = useAuth();
