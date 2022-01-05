@@ -8,7 +8,6 @@ import AuthProvider from './Context/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
-import AdminRoute from './Pages/Login/AdminRoute/AdminRoute';
 import AddProducts from './Pages/Dashboard/AddProducts/AddProducts';
 import Collection from './Pages/Collection/Collection/Collection';
 import ProductDetails from './Pages/Collection/Detail/ProductDetails';
