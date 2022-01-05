@@ -2,6 +2,7 @@ import React from 'react';
 import './Blogs.css'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Navigation from '../Shared/Navigation/Navigation';
+import Footer from '../Shared/Footer';
 
 const Blogs = () => {
     return (
@@ -90,6 +91,7 @@ const Blogs = () => {
 
                 </Row>
             </Container>
+            <Footer />
         </div>
     );
 };
